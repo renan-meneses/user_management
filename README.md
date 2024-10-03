@@ -3,6 +3,31 @@
 
 Esta é uma API RESTful desenvolvida em Python utilizando o framework FastAPI, com autenticação via AWS Cognito. A API gerencia usuários e seus acessos a um painel administrativo, fornecendo controle de acesso baseado em roles (admin e user) e possibilitando ativar/inativar usuários. A aplicação é implantada na AWS Lambda e exposta via API Gateway, e armazena os dados no banco de dados PostgreSQL.
 
+## Estrutura
+
+```bash
+- app/
+  - api/
+    - __init__.py
+    - admin.py  # Endpoints para admin
+    - user.py   # Endpoints para usuário
+    - auth.py   # Endpoints para autenticação
+  - core/
+    - __init__.py
+    - config.py  # Configuração de banco de dados e AWS Cognito
+    - security.py  # Lógica de autenticação e autorização
+  - models/
+    - __init__.py
+    - user.py  # Model do usuário
+  - db/
+    - __init__.py
+    - base.py  # Base para os modelos
+    - session.py  # Sessão de banco de dados
+  - main.py  # Inicialização do FastAPI
+- Dockerfile
+- requirements.txt
+´´´
+
 ## Funcionalidades
 
 ### Administrador (Admin):
