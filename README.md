@@ -26,7 +26,7 @@ Esta é uma API RESTful desenvolvida em Python utilizando o framework FastAPI, c
   - main.py  # Inicialização do FastAPI
 - Dockerfile
 - requirements.txt
-´´´
+```
 
 ## Funcionalidades
 
