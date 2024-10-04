@@ -78,6 +78,7 @@ sqlalchemy
 psycopg2-binary
 boto3
 pydantic
+alembic
 ```
 
 ### Variáveis de Ambiente
@@ -95,8 +96,8 @@ AWS_COGNITO_REGION=your_cognito_region
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/renan-meneses/seu_repositorio.git
-   cd seu_repositorio
+   https://github.com/renan-meneses/user_management.git
+   cd user_management
    ```
 
 2. Crie um ambiente virtual e ative-o:
